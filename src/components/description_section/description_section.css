@@ -1,0 +1,15 @@
+.description-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #070142;
+    padding: 20px;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+
+.description {
+    font-size: 18px;
+    font-family: 'Roboto';
+}
