@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>admin-home</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #042a69, #009ecf);
+      width: 100vw;
+      height: 100vh;
+      font-family: "Anta";
+      
+      
+    }
+
+    .admin-container {
+      
+      
+      display: grid;
+      grid-template-columns: 25% 35% 35%;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: 
+       "second first first"
+       "second third fourth"
+      ;
+      height: 100%;
+      padding: 80px 80px;
+      gap: 1.5%;
+      
+     
+    }
+
+    .box {
+      background-color: #fff;
+      opacity: 0.92;
+      border-radius: 30px;
+    }
+
+    .first-container{
+      grid-area: first;
+      margin-bottom: 2.5%;
+    }
+
+    .first-container h2,.third-container h2, .fourth-container h2 {  
+      margin:40px 40px 20px 40px;
+      font-size: 30px;
+      color: #042a69;
+      
+    }
+
+    .second-container{
+      grid-area: second;
+      background-color: #F0F3F4;
+      
+    }
+
+    .menu{
+      margin: 10%;
+      height: 90%;  
+    }
+
+    .logo-container{
+      border-bottom: solid 1.5px #d9dadb;
+     
+    }
+
+    .logo{
+      width: 150px;
+      margin-bottom: 20px;
+      
+    }
+
+    .menu-elements{
+      margin-top: 10px;
+      height: 40px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .menu-elements:hover{
+      background-color: #000;
+      color: #fff;
+    }
+
+    .menu-elements span{
+      margin-left: 30px;
+    }
+
+    .menu-user {
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 20px;
+      height: 80%;
+      justify-content: end;
+    }
+
+    
+
+    .menu-user img{
+      width: 80px;
+      border-radius: 50px; /*Borrar despues*/
+      margin-bottom: 10px;
+    }
+
+    .menu-user .name {
+      margin-bottom: 10px;
+    
+    }
+
+    .third-container{
+      grid-area: third;
+    }
+
+    .fourth-container{
+      grid-area: fourth;
+    }
+
+    .lotery-info{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: auto;
+      text-align: left;
+     
+      gap: 10px;
+      align-items: center;
+      margin: 0 30px;
+      
+    }
+
+    .title{
+      border-bottom: solid 1px #d9dadb;
+      border-top: solid 1px #d9dadb;
+      padding: 10px 20px;
+       
+    }
+
+    .info{
+      margin-top: 10px;
+      padding: 10px 20px;
+    }
+
+    
+
+    .container-winners{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 20px 10px 10px 10px;
+      align-items: center;
+    }
+
+    .winners{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 10px 10px;
+      align-items: center;
+      padding: 10px 20px;
+      font-size: 12px;
+      
+    }
+
+    
+
+    
+
+
+  </style>
+
+  <body>
+    
+    
+    <div class="admin-container">
+      <div class="first-container box">
+        <h2>Sorteos</h2>
+        <div class="lotery-box">
+          <div class="lotery-info title">
+            <h3 class="name-lotery">Nombre del sorteo</h3>
+            <h3 class="members-lotery">Integrantes</h3>
+            <h3 class="status-lotery">Estado</h3>
+            <h3 class="start-lotery">Fecha de inicio</h3>
+            <h3 class="finish-lotery">Fecha de finalizacion</h3>
+          </div>
+          <div class="lotery-info info">
+            <p class="name-lotery">Primer sorteo</p>
+            <p class="members-lotery">50</p>
+            <p class="status-lotery">Finalizado</p>
+            <p class="start-lotery">12/02/2024</p>
+            <p class="finish-lotery">13/02/2024</p>
+          </div>
+        </div>
+      </div>
+      <div class="second-container box">
+        <div class="menu">
+          <div class="logo-container">
+          <img src="logo.png"  class="logo" ="logo"/>
+          </div>
+          <div class="menu-dashboard menu-elements">
+            <span>Dashboard</span>
+          </div>
+          <div class="menu-sorteo menu-elements"> 
+            <span>Crear Sorteo</span>
+          </div>
+          <div class="menu-user">
+            <img src="profile.png" alt="photo">
+            <h3 class="name">Victor Orrego</h3>
+            <h3 class="nickname">@Dresorrego</h3>
+          </div>
+        </div>
+      </div>
+      <div class="third-container box"> 
+        <h2>Gráfica de usuarios</h2>
+      </div>
+      <div class="fourth-container box">
+        <h2>Ganadores de sorteos</h2>
+        <div class="container-winners title">
+          <h3 class="name-lotery">Usuario</h3>
+          <h3 class="members-lotery">Sorteo <br> Ganador</h3>
+          <h3 class="status-lotery">Fecha</h3>
+        </div>
+        <div class="winners">
+          <h3 class="name-lotery">Victor</h3>
+          <h3 class="members-lotery">El mas vergudo</h3>
+          <h3 class="status-lotery">14/03/2024</h3>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
