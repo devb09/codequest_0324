@@ -1,0 +1,18 @@
+.notfound-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    pointer-events: none;
+    user-select: none;
+}
+
+.notfound-container h2 {
+    color: #ffd835;
+    font-size: 46px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-family: "Anta";
+}
