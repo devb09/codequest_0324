@@ -1,0 +1,56 @@
+.login-container {
+  display: flex;
+  align-items: center;
+  height: 95vh;
+  margin: 0 10%;
+  gap: 20%;
+}
+
+.text-login {
+  width: 50%;
+}
+
+.text-login h2 {
+  color: #ffd835;
+  font-size: 46px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #ffd835;
+  font-family: "Anta";
+}
+
+.text-login p {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.text-login button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffd835;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Anta";
+  cursor: pointer;
+}
+
+.text-login button:hover {
+  background-color: #fff;
+  transition: all 0.5s ease ;
+}
+
+.text-login button img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.image-login {
+  width: 50%;
+}
+
+.image-login img {
+  width: 70%;
+}
