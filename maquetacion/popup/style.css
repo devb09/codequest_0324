@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.PopUp{
+    width: 602px;
+    height: 384px;
+    background: linear-gradient(to right, #042a69, #009ecf);
+    border-radius: 30px;
+}
+
+.container{
+    display: flex;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.right h2{
+    font-family: "Anta";
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 40px;
+    color:  #ffd835;
+}
+
+.right p{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.right a{
+    background-color: transparent;
+    padding: 20px;
+    border: 1px solid #ffd835;
+    border-radius: 30px;
+    font-family: "Anta";
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    width: 86%;
+}
+
+.right a:hover{
+    transition: .5s;
+    background: linear-gradient(to bottom, #f2ea4e,#ffd835);
+    color: #042a69;
+}
+
+
+
+.left{
+    width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.left img{
+    width: 80%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .PopUp{
+        width: 288px;
+        height: 443px;
+        padding: 32px 32px 8px 32px;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .right{
+        width: 100%;
+        height: auto;
+        margin-bottom: 12px;
+    }
+
+    .right h2{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .right p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .left{
+        width: 100%;
+        height: 222px;
+        background-image: url("mobile.png");
+    }
+
+    .code{
+        font-size: 14px;
+        line-height: 17.5px;
+        width: 170px;
+    }
+
+    .porcent{
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .text{
+        font-size: 14px;
+        line-height: 21px;
+        width: 170px;
+    }
+    .left button{
+        width: 199px;
+        height: 41px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .rule{
+        bottom: 7px;
+    }
+
+
+}
